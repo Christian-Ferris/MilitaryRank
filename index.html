@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Military Rank Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rank Form</h1>
+    <form>
+        <h3>Select your rank:</h3>
+        <input type="radio" name="rank" id="rank-general" value="General" data-rank="General">
+        <label for="rank-general">General</label>
+        <br>
+
+        <input type="radio" name="rank" id="rank-colonel" data-rank="Colonel">
+        <label for="rank-colonel">Colonel</label>
+        <br>
+
+        <input type="radio" name="rank" id="rank-private" data-rank="Private">
+        <label for="rank-private">Private</label>
+        <br>
+        <br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName">
+        <br>
+        <br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName">
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+
+    <p class="output">
+        Hello, <span id="userOutput"></span>
+    </p>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="code.js"></script>
+</body>
+</html>
